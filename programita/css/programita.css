@@ -1,0 +1,11 @@
+*{font-family: 'Ubuntu Mono', monospace;}
+
+main{height: 100vh !important; background: #ffffff !important;   display: flex !important;   justify-content: center !important; align-items: center !important;}
+.caja-principal{
+
+    background: #0D1B2A !important;
+    padding: 10vh 4vh 10vh 4vh !important;
+    box-shadow: 6px 2px 6px #999;
+    border-radius: 5px;
+}
+
