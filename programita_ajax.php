@@ -107,7 +107,7 @@
                     $columnas = 0;
                     for ($index = 1; $index < 2; $index++) {
                         $columnas = count(explode(";", $fp[$index]));
-                        if ($columnas ==8) {
+                        if ($columnas ==15) {
                             $increment = "";
                             $store_id = "";
                             $name = "";
