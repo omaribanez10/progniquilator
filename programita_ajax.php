@@ -16,7 +16,7 @@
             <?php
              
         break;
-        case 2:
+        case 2://Productos
             @$archivo = str_decode($_POST["archivo"]);
             $ruta_archivo = "data/".$archivo;
             $contador = 0;
@@ -29,50 +29,50 @@
                     for ($index = 1; $index < 2; $index++) {
                         $columnas = count(explode(";", $fp[$index]));
                         if ($columnas ==8) {
-                            $autoincremental = "";
-                            $numero_tag = "";
-                            $tag = "";
-                            $serial = "";
-                            $no_GTIN = "";
-                            $poder = "";
-                            $fecha_vence = "";
-                            $tipo_lente = "";
+                            $increment = "";
+                            $store_id = "";
+                            $name = "";
+                            $nit = "";
+                            $phone = "";
+                            $email = "";
+                            $website = "";
+                            $address = "";
                             $arr_dato = array();
                             for ($index = 1; $index <= $filas; $index++) {
                                 $contador++;
                                 $arr_dato = explode(";", $fp[$index]);
-                                $autoincremental = trim($arr_dato[0]);
-                                $numero_tag = trim($arr_dato[1]);
-                                $tag = (trim($arr_dato[2]));
-                                $serial = trim($arr_dato[3]);
-                                $no_GTIN = trim($arr_dato[4]);
-                                $poder = (trim($arr_dato[5]));
-                                $fecha_vence = trim($arr_dato[6]);
-                                $tipo_lente = (trim($arr_dato[7]));
+                                $increment = trim($arr_dato[0]);
+                                $store_id = trim($arr_dato[1]);
+                                $name = (trim($arr_dato[2]));
+                                $nit = trim($arr_dato[3]);
+                                $phone = trim($arr_dato[4]);
+                                $email = (trim($arr_dato[5]));
+                                $website = trim($arr_dato[6]);
+                                $address = (trim($arr_dato[7]));
                                 
                                 $guarda = false;
                                 if ($contador < 1000) {
                                     if ($index == $filas) {
                                         $guarda = true;
                                     }
-                                    if ($numero_tag != "") {
+                                    if ($store_id != "") {
                                         if ($arr_datos != "") {
                                             $arr_datos .= "|";
                                         }
-                                        $arr_datos .= $autoincremental.";".$numero_tag.";".$tag.";".$serial.";".$no_GTIN.";".$poder.";".$fecha_vence.";".$tipo_lente;
+                                        $arr_datos .= $increment.";".$store_id.";".$name.";".$nit.";".$phone.";".$email.";".$website.";".$address;
                                     }
                                 } else {
                                     if ($arr_datos != "") {
                                         $arr_datos .= "|";
                                     }
-                                        $arr_datos .= $autoincremental.";".$numero_tag.";".$tag.";".$serial.";".$no_GTIN.";".$poder.";".$fecha_vence.";".$tipo_lente;
+                                        $arr_datos .= $increment.";".$store_id.";".$name.";".$nit.";".$phone.";".$email.";".$website.";".$address;
                                     $guarda = true;
                                 }
             
                                 if ($guarda) {
                                     $tmp_filas = count(explode("|", $arr_datos)); 
                                     
-                                    $rta = $dbProgramita->crearActualizarDatosMaestro(5, $arr_datos, $tmp_filas);
+                                    $rta = $dbProgramita->insertStores(5, $arr_datos, $tmp_filas);
 
                                     if ($rta<0) { break; }
             

@@ -4,11 +4,11 @@ require_once("DbConexion.php");
 
 class DbProgramita extends DbConexion {
 	  
-	public function crearActualizarDatosMaestro($id_usuario, $arr_datos, $tmp_filas){
+	public function insertStores($id_usuario, $arr_datos, $tmp_filas){
 						
 			try{
-				$sql = "CALL pa_crear_existencias('".$arr_datos."', ".$tmp_filas.", @id)";
-				//echo($sql);
+				$sql = "CALL pa_insert_stores('".$arr_datos."', ".$tmp_filas.", @id)";
+				echo($sql);
 				$arrCampos[0] = "@id";
 				$arrResultado = $this->ejecutarSentencia($sql, $arrCampos);
 				$resultado_out = $arrResultado["@id"];	
@@ -18,6 +18,8 @@ class DbProgramita extends DbConexion {
 				return -2;
 		}			
 	}
+
+	
 }
 ?>
  
