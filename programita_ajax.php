@@ -107,28 +107,42 @@
                     $columnas = 0;
                     for ($index = 1; $index < 2; $index++) {
                         $columnas = count(explode(";", $fp[$index]));
-                        if ($columnas ==15) {
+                        if ($columnas == 14) {
                             $increment = "";
+                            $product_id = "";
                             $store_id = "";
+                            $code = "";
                             $name = "";
-                            $nit = "";
-                            $phone = "";
-                            $email = "";
-                            $website = "";
-                            $address = "";
+                            $img = "";
+                            $price = "";
+                            $discount = "";
+                            $tricoins = "";
+                            $premium_discount = "";
+                            $is_valid = "";
+                            $is_digital = "";
+                            $is_sustainable = "";
+                            $is_recyclable = "";
+
                             $arr_dato = array();
                             for ($index = 1; $index <= $filas; $index++) {
                                 $contador++;
                                 $arr_dato = explode(";", $fp[$index]);
                                 $increment = trim($arr_dato[0]);
-                                $store_id = trim($arr_dato[1]);
-                                $name = (trim($arr_dato[2]));
-                                $nit = trim($arr_dato[3]);
-                                $phone = trim($arr_dato[4]);
-                                $email = (trim($arr_dato[5]));
-                                $website = trim($arr_dato[6]);
-                                $address = (trim($arr_dato[7]));
                                 
+                                $product_id = trim($arr_dato[1]);
+                                $store_id = (trim($arr_dato[2]));
+                                $code = (trim($arr_dato[3]));
+                                $name = trim($arr_dato[4]);
+                                $img = trim($arr_dato[5]);
+                                $price = (trim($arr_dato[6]));
+                                $discount = trim($arr_dato[7]);
+                                $tricoins = (trim($arr_dato[8]));
+                                $premium_discount = (trim($arr_dato[9]));
+                                $is_valid = trim($arr_dato[10]);
+                                $is_digital = trim($arr_dato[11]);
+                                $is_sustainable = (trim($arr_dato[12]));
+                                $is_recyclable = trim($arr_dato[13]);
+                                                               
                                 $guarda = false;
                                 if ($contador < 1000) {
                                     if ($index == $filas) {
@@ -138,7 +152,8 @@
                                         if ($arr_datos != "") {
                                             $arr_datos .= "|";
                                         }
-                                        $arr_datos .= $increment.";".$store_id.";".$name.";".$nit.";".$phone.";".$email.";".$website.";".$address;
+                                        $arr_datos .= $increment.";".$product_id.";".";".$store_id.";".";".$code.";".$name.";".$img.";".$price.";".$discount.";".$tricoins.
+                                        ";".$premium_discount.";".$is_valid.";".$is_digital.";".$is_sustainable.";".$is_recyclable;
                                     }
                                 } else {
                                     if ($arr_datos != "") {
