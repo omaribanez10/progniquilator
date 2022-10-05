@@ -1,2 +1,0 @@
-# programita
-# progniquilator
