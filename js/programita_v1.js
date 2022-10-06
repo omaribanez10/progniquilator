@@ -20,7 +20,7 @@ const continuarCargarArchivo = () =>{
     let respuesta = document.getElementById('hdd_rta_carga').value
     if(parseInt(respuesta) === 1){
         let archivo = document.getElementById('hdd_archivo').value
-        var params = "opcion=2&archivo=" + archivo;
+        var params = "opcion=3&archivo=" + archivo;
         llamarAjax("./programita_ajax.php", params, "contenedor", "validarCargarArchivo()");
     }
 }

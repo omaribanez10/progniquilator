@@ -107,7 +107,7 @@
                     $columnas = 0;
                     for ($index = 1; $index < 2; $index++) {
                         $columnas = count(explode(";", $fp[$index]));
-                        if ($columnas == 14) {
+                        if ($columnas == 15) {
                             $increment = "";
                             $product_id = "";
                             $store_id = "";
@@ -122,6 +122,7 @@
                             $is_digital = "";
                             $is_sustainable = "";
                             $is_recyclable = "";
+                            $category_id = "";
 
                             $arr_dato = array();
                             for ($index = 1; $index <= $filas; $index++) {
@@ -142,7 +143,8 @@
                                 $is_digital = trim($arr_dato[11]);
                                 $is_sustainable = (trim($arr_dato[12]));
                                 $is_recyclable = trim($arr_dato[13]);
-                                                               
+                                $category_id = trim($arr_dato[14]);
+                                                            
                                 $guarda = false;
                                 if ($contador < 1000) {
                                     if ($index == $filas) {
@@ -153,14 +155,15 @@
                                             $arr_datos .= "|";
                                         }
                                         $arr_datos .= $increment.";".$product_id.";".$store_id.";".$code.";".$name.";".$img.";".$price.";".$discount.";".$tricoins.
-                                        ";".$premium_discount.";".$is_valid.";".$is_digital.";".$is_sustainable.";".$is_recyclable;
+                                        ";".$premium_discount.";".$is_valid.";".$is_digital.";".$is_sustainable.";".$is_recyclable.";".$category_id;
                                     }
                                 } else {
                                     if ($arr_datos != "") {
                                         $arr_datos .= "|";
                                     }
                                         $arr_datos .= $increment.";".$product_id.";".$store_id.";".$code.";".$name.";".$img.";".$price.";".$discount.";".$tricoins.
-                                        ";".$premium_discount.";".$is_valid.";".$is_digital.";".$is_sustainable.";".$is_recyclable;
+                                        ";".$premium_discount.";".$is_valid.";".$is_digital.";".$is_sustainable.";".$is_recyclable.";".$category_id;
+
                                     $guarda = true;
                                 }
             

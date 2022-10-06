@@ -1,0 +1,62 @@
+﻿increment;id;store_id;code;name;img;price;discount;tricoins;premium_descount;is_valid;is_digital;is_sustainable;is_recyclable;category_id
+1;8;35;002;Seedballs;product_img.png;3500;100;1;100;1;1;1;1;1
+2;9;35;123;CASES;product_img.png;30000;10;1;10;1;0;0;0;2
+3;11;35;003;Rappi creditos;product_img.png;1000;100;1;100;1;1;0;1;3
+4;12;35;005;prueba;product_img.png;10000;100;1;100;1;0;0;1;4
+5;14;18;000170;NATRYP;product_img.png;50000;10;1;10;1;1;0;1;5
+6;15;35;1;Papas;product_img.png;80000;30;1;30;1;0;1;0;1
+7;17;36;1001;Forro Dulcesitos;product_img.png;40000;15;1;15;1;0;1;1;2
+8;18;36;1002;Libreta Personajes;product_img.png;30000;20;1;20;1;0;1;0;3
+9;19;36;1003;Libreta Colombia;product_img.png;30000;15;1;15;1;0;0;0;4
+10;20;36;1004;Libreta Orquídeas;product_img.png;30000;15;1;15;1;1;0;1;5
+11;21;36;1005;Libreta Bogota;product_img.png;30000;20;1;20;1;1;1;1;1
+12;22;36;1006;Forro Hojas Treelife;product_img.png;45000;15;1;15;1;1;0;1;2
+13;23;36;1007;Forro Tierra Treelife ;product_img.png;45000;15;1;15;1;1;0;1;4
+14;24;36;1008;Forro Amazonia Treelife;product_img.png;45000;15;1;15;1;0;0;1;5
+15;25;36;1009;Forro Amazonas Colombia;product_img.png;40000;15;1;15;1;1;0;1;1
+16;26;36;1010;Forro Bogota;product_img.png;40000;15;1;15;1;1;1;0;2
+17;27;36;1011;Forro Chocoramo;product_img.png;40000;15;1;15;1;1;0;1;3
+18;28;36;1012;Forro Aguacates;product_img.png;40000;20;1;20;1;1;1;0;4
+19;29;36;1013;Forro Personajes;product_img.png;40000;20;1;20;1;1;1;1;5
+20;30;36;1014;Forro Palma de Cera;product_img.png;40000;15;1;15;1;0;0;0;1
+21;31;36;1015;Forro Ballenas;product_img.png;40000;15;1;15;1;1;1;0;2
+22;32;36;1016;Forro Paisaje Tropical;product_img.png;40000;15;1;15;1;0;1;0;3
+23;33;36;1017;Libreta Pajaros;product_img.png;40000;15;1;15;1;0;0;0;4
+24;34;36;1018;Libreta Colombia Ancestral;product_img.png;40000;15;1;15;1;1;1;0;5
+25;35;39;VAMECCRL;Chaqueta Cosmos I Roca de Luna;product_img.png;240000;10;4;15;1;0;0;1;1
+26;38;31;010201;Oxigeno;product_img.png;129900;10;2;15;1;1;0;0;2
+27;47;37;HAZAMLA;Hoodie Oso Andino ;product_img.png;100000;10;2;20;1;1;0;1;4
+28;51;37;HVEAMLA;Hoodie Oso Anteojos ;product_img.png;100000;10;2;20;1;1;0;0;5
+29;66;38;0001;Petra;product_img.png;130000;20;1;20;1;0;1;1;1
+30;68;38;0003;Tijuana;product_img.png;175000;20;2;20;1;0;1;1;2
+31;69;38;0004;Osaka;product_img.png;155000;20;2;20;1;0;1;0;3
+32;72;38;0002;Atenas;product_img.png;115000;20;1;20;1;0;1;1;4
+33;73;39;VAMECCRS;Chaqueta Cosmos I Roca de Sol;product_img.png;240000;10;4;15;1;1;1;0;5
+34;74;39;VAMEBBCRL;Canguro Canoa I Roca de Luna;product_img.png;95000;10;2;15;1;0;1;1;1
+35;75;39;VAMEPM;Pantalón Mito;product_img.png;120000;10;2;15;1;0;0;1;2
+36;210;37;C3P;3-Pack camisetas ;product_img.png;135000;10;2;20;1;1;0;1;3
+37;211;37;HGRBLXS;Grizzli Blanco ;product_img.png;100000;10;2;20;1;1;1;0;4
+38;214;37;CGRAZXS;Huracán ;product_img.png;190000;10;3;20;1;0;1;0;5
+39;219;31;010102;Celsius;product_img.png;129900;10;2;15;1;0;1;0;1
+40;220;31;020102;Hidrafobo;product_img.png;69900;10;1;15;1;1;1;0;2
+41;318;37;JAZSAH;Jooger Blue Smoke Hombre;product_img.png;100000;10;2;15;1;1;1;1;4
+42;319;37;JROSAM;Jogger Tan Pink mujer;product_img.png;100000;10;2;15;1;0;1;1;5
+43;320;37;HGRROSSA;Perezoso Rosado;product_img.png;100000;20;1;20;1;1;1;0;1
+44;321;37;HPACRSA;Siberiano Blanco;product_img.png;100000;15;1;20;1;0;1;0;2
+45;322;37;HGRAZSA;Perezoso Azul;product_img.png;100000;15;1;20;1;1;0;0;3
+46;323;37;NVESAM;Crewneck Olive Green Mujer;product_img.png;90000;10;2;15;1;0;0;0;4
+47;324;37;NCESAH;Crewneck Artic Grey Hombre;product_img.png;90000;10;2;15;1;0;0;1;5
+48;325;37;ZHROSA;Zip-up Hoodie Tan Pink Unisex;product_img.png;130000;10;2;15;1;0;1;1;1
+49;326;37;ZHNESA;Zip-up Hoodie Black Ink Unisex;product_img.png;130000;10;2;15;1;1;0;0;2
+50;327;37;SVESAM;Short Olive Green Mujer;product_img.png;60000;10;1;15;1;1;0;0;3
+51;328;37;SNESAH;Short Black Ink Hombre;product_img.png;60000;10;1;15;1;1;1;0;4
+52;329;37;TVIGRSM;T-shirt Vinotinto Mujer;product_img.png;50000;10;1;15;1;0;0;1;5
+53;330;37;TBLAZSM;T-shirt Blanca Mujer;product_img.png;50000;10;1;15;1;1;1;0;1
+54;331;37;TNEGRSM;T-shirt Negra Mujer;product_img.png;50000;10;1;15;1;1;0;1;2
+55;332;37;TGRAZSH;T-shirt Gris Hombre;product_img.png;50000;10;1;15;1;0;0;1;4
+56;333;37;TROGRSH;T-shirt Rosada Hombre;product_img.png;50000;10;1;15;1;0;0;0;5
+57;334;37;TROGRSH;T-shirt Rosada Hombre;product_img.png;50000;10;1;15;1;0;1;1;1
+58;335;37;TAZBLSH;T-shirt Azul Oscura Hombre;product_img.png;50000;10;1;15;1;1;0;1;2
+59;373;35;ECOMIUP1;PEPINO JAKE;product_img.png;150000;28;1;33;1;1;1;0;3
+60;550;35;VS0382;VSCO Premium;product_img.png;81900;100;1;100;1;1;0;1;4
+61;989;35;1004;Transfiere Treecoins;product_img.png;0;100;1;100;1;1;0;1;5
