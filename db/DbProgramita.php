@@ -9,7 +9,7 @@ class DbProgramita extends DbConexion {
 		try{
 
 			$sql = "CALL pa_insert_stores('".$arr_datos."', ".$tmp_filas.", @id)";
-			echo($sql);
+			//echo($sql);
 			$arrCampos[0] = "@id";
 			$arrResultado = $this->ejecutarSentencia($sql, $arrCampos);
 			$resultado_out = $arrResultado["@id"];	
@@ -24,7 +24,7 @@ class DbProgramita extends DbConexion {
 						
 		try{
 			$sql = "CALL pa_insert_products('".$arr_datos."', ".$tmp_filas.", @id)";
-			echo($sql);
+			//echo($sql);
 			$arrCampos[0] = "@id";
 			$arrResultado = $this->ejecutarSentencia($sql, $arrCampos);
 			$resultado_out = $arrResultado["@id"];	
@@ -39,7 +39,7 @@ class DbProgramita extends DbConexion {
 						
 		try{
 			$sql = "CALL pa_insert_categories('".$arr_datos."', ".$tmp_filas.", @id)";
-			echo($sql);
+			//echo($sql);
 			$arrCampos[0] = "@id";
 			$arrResultado = $this->ejecutarSentencia($sql, $arrCampos);
 			$resultado_out = $arrResultado["@id"];	
